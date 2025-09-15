@@ -43,8 +43,8 @@ This project analyzes NBA player and team statistics from 1992 to 2022 to unders
 ## 📊 Results So Far
 
 ### 1. Data Cleaning
-- ✅ Data cleaned and saved:  
-  `C:\Users\Hans Christopher\Documents\DATA ANALYST TOOLS\PYTHON\NBA Playoff Analysis (1992 - 2022)\csv_files\states_dataframe_clean.csv`
+✅ Data cleaned and saved:  
+[states_dataframe_clean.csv](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files/states_dataframe_clean.csv)
 
 ### 2. Three-Point Shooting
 - Correlation (3PT Makes vs WS): **0.3189**
