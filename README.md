@@ -1,11 +1,14 @@
 # NBA Playoff Analysis (1992–2022)
 
 This project analyzes NBA player and team statistics from 1992 to 2022 to understand key factors contributing to championship success, focusing on **three-point shooting**, **offense vs defense**, and **star player influence**.
-Kaggle Dataset Link: https://www.kaggle.com/datasets/robertsunderhaft/nba-playoffs
+
+🔗**Kaggle Dataset Link**: https://www.kaggle.com/datasets/robertsunderhaft/nba-playoffs
 
 ---
 
 ## ✅ Project Goals
+
+## Project Goals
 
 1. **Data Cleaning (Goal 1)**
    - Standardize and clean the raw dataset.
@@ -27,6 +30,14 @@ Kaggle Dataset Link: https://www.kaggle.com/datasets/robertsunderhaft/nba-playof
    - Ensure only one top player per team per season is considered.
    - Compare how often these top players won championships and their average performance.
 
+5. **Data Visualization Goals**
+   - **3-Point Shooting Trends:** Line charts showing league-wide and team-level 3PT makes, attempts, and percentages over the years.
+   - **3PT vs Team Success:** Scatter plots to visualize the correlation between 3PT makes and Win Shares.
+   - **True Shooting % vs 3PT %:** Scatter plots to explore relationships between efficiency metrics.
+   - **Offense vs Defense:** Bar or boxplots comparing OBPM and DBPM for championship vs non-championship teams.
+   - **Star Player Influence:** Heatmaps or radar charts showing top players’ composite scores (PER, BPM, WS) across seasons.
+   - **High-Volume Shooters:** Comparative charts to highlight shooting efficiency of championship vs non-championship players.
+
 ---
 
 ## 📂 Files Generated
@@ -44,8 +55,7 @@ Kaggle Dataset Link: https://www.kaggle.com/datasets/robertsunderhaft/nba-playof
 ## 📊 Results So Far
 
 ### 1. Data Cleaning
-✅ Data cleaned and saved:  
-[CSV Files](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files)
+✅ Data cleaned and saved: [CSV Output Files](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files)
 
 ### 2. Three-Point Shooting
 - Correlation (3PT Makes vs WS): **0.3189**
