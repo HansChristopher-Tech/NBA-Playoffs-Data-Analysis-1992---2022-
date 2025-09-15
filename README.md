@@ -51,32 +51,88 @@ This project analyzes NBA player and team statistics from 1992 to 2022 to unders
 | `star_player_influence.csv` | Top player composite metric per team/season |
 
 ---
-
-## 📊 Results So Far
+## Results So Far
 
 ### 1. Data Cleaning
-✅ Data cleaned and saved: [CSV Output Files](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files)
+✅ **Cleaned Data Saved:** [states_dataframe_clean.csv](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files/states_dataframe_clean.csv)
 
-### 2. Three-Point Shooting
-- Correlation (3PT Makes vs WS): **0.3189**
-- Correlation (TS% vs 3PT%): **0.382**
-- High-volume shooters:
-  - Champions avg 3P%: **0.352**
-  - Non-champions avg 3P%: **0.335**
-
-### 3. Offense vs Defense
-- Correlation BPM vs WS: **0.1667**
-- Champions: OBPM=-0.7098, DBPM=0.9657  
-- Non-champions: OBPM=-1.2543, DBPM=0.2395  
-- **Defense > Offense by 1.68 → defensive edge in champions.**
-
-### 4. Star Player Influence
-- Championship Rate of Stars: **6.2%**
-- Champion Stars Avg Composite: **2.548**
-- Non-Champion Stars Avg Composite: **1.196**
+**Function Used:**
+```python
+def save_cleaned_csv():
+    df.to_csv("csv_files/states_dataframe_clean.csv", index=False)
+    print("✅ Data cleaned and saved successfully!")
+````
 
 ---
 
+### 2. Three-Point Shooting Analysis
+
+✅ **3PT CSV Files Saved:**
+
+* [three\_point\_data.csv](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files/three_point_data.csv)
+* [three\_point\_trend\_team.csv](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files/three_point_trend_team.csv)
+* [yearly\_team\_3pt\_pct\_champions.csv](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files/yearly_team_3pt_pct_champions.csv)
+
+**Key Metrics:**
+
+* Correlation (3PT Makes vs WS): 0.3189
+* Correlation (TS% vs 3PT%): 0.382
+* High-volume shooters (Champions avg 3P%): 0.352
+* High-volume shooters (Non-Champions avg 3P%): 0.335
+
+**Function Used:**
+
+```python
+def print_three_point_csv():
+    df_threes.to_csv("csv_files/three_point_data.csv", index=False)
+    df_threes_trend_team.to_csv("csv_files/three_point_trend_team.csv", index=False)
+    df_grouper_efficiency.to_csv("csv_files/yearly_team_3pt_pct_champions.csv", index=False)
+    print("✅ 3PT CSV files saved!")
+```
+
+---
+
+### 3. Offense vs Defense Analysis
+
+**Key Metrics:**
+
+* Correlation BPM vs WS: 0.1667
+* Championship OBPM = -0.7098, DBPM = 0.9657
+* Non-Championship OBPM = -1.2543, DBPM = 0.2395
+* **Observation:** Defense > Offense by 1.68 → defensive edge in champions
+
+**Function Used:**
+
+```python
+def offense_vs_defense():
+    print(f"Correlation between BPM and WS (player-level): {cor}")
+    print(f"Championship OBPM={champ_obpm}, DBPM={champ_dbpm}")
+    print(f"Non-Championship OBPM={non_champ_obpm}, DBPM={non_champ_dbpm}")
+```
+
+---
+
+### 4. Star Player Influence
+
+✅ **Star Player Influence CSV Saved:** [star\_player\_influence.csv](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/tree/master/csv_files/star_player_influence.csv)
+
+**Key Metrics:**
+
+* Championship Rate of Stars: 6.2%
+* Champion Stars Avg Composite: 2.548
+* Non-Champion Stars Avg Composite: 1.196
+
+**Function Used:**
+
+```python
+def star_influence_csv():
+    df_star_top.to_csv("csv_files/star_player_influence.csv", index=False)
+    print("✅ Star Player Influence CSV saved!")
+    print(f"Championship Rate of Stars: {championship_rate*100}%")
+    print(f"Champion Stars Avg Composite: {avg_champ_composite}")
+    print(f"Non-Champion Stars Avg Composite: {avg_non_champ_composite}")
+```
+---
 ## 📈 Next Steps
 
 - Create **Power BI dashboards** to visualize:
