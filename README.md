@@ -1,7 +1,7 @@
 # NBA Playoff Analysis (1992–2022)
 
 This project analyzes NBA player and team statistics from 1992 to 2022 to understand key factors contributing to championship success, focusing on **three-point shooting**, **offense vs defense**, and **star player influence**.
-[Click Me for the Kaggle Dataset Link](https://www.kaggle.com/datasets/robertsunderhaft/nba-playoffs)
+Kaggle Dataset Link: https://www.kaggle.com/datasets/robertsunderhaft/nba-playoffs
 
 ---
 
