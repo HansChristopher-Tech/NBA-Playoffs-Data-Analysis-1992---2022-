@@ -134,19 +134,22 @@ def offense_vs_defense(df):
 # ==============================================
 def star_player_influence(df):
     """Compute composite metric (PER, BPM, WS) for top player per team/season"""
-    df_star = df[["season", "team_id", "player", "per", "bpm", "ws", "champion"]].dropna()
+    df_star = df[["season", "team_id", "player", "mp_per_g", "per", "bpm", "ws", "champion"]].dropna()
     df_star["per_z"] = zscore(df_star["per"])
     df_star["bpm_z"] = zscore(df_star["bpm"])
     df_star["ws_z"] = zscore(df_star["ws"])
     df_star["Composite"] = df_star[["per_z", "bpm_z", "ws_z"]].mean(axis=1)
 
     # Top player per team/season
+
     df_star_top = (
-        df_star.sort_values(["season", "team_id", "Composite"], ascending=[True, True, False])
-               .groupby(["season", "team_id"])
-               .head(1)
-               .reset_index(drop=True)
+        df_star
+            .sort_values(["season", "team_id", "Composite"], ascending=[True, True, False])
+            .groupby(["season", "team_id"])
+            .head(1)
+            .reset_index(drop=True)
     )
+
 
     champ_stars = df_star_top[df_star_top["champion"] == 1]
     non_champ_stars = df_star_top[df_star_top["champion"] == 0]
