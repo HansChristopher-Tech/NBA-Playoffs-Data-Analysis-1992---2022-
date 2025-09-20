@@ -89,7 +89,7 @@ def save_cleaned_csv():
 * Correlation (TS% vs. 3PT%): **0.382**
 * Avg 3PT%: Champions = **35.2%**, Non-Champions = **33.5%**
 
-📈 **Graph:** [3PT Shooting Trends](charts/3PT_Trends.png)
+📈 **Graph:** ![3PT Shooting Trends](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/blob/master/charts/3PT_Trends.png?raw=true)
 *Three-point attempts increased steadily, peaking around 2020, with league averages \~32%.*
 
 ---
@@ -105,8 +105,9 @@ def save_cleaned_csv():
 
 📈 **Graphs:**
 
-* [Offense vs Defense (Champs)](charts/Offense_vs_Defense_Champs.png)
-* [Offense vs Defense (Non-Champs)](charts/Offense_vs_Defense_Non-Champs.png)
+![Offense vs Defense (Champs)](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/blob/master/charts/Offense_vs_Defense_Champs.png?raw=true)  
+![Offense vs Defense (Non-Champs)](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/blob/master/charts/Offense_vs_Defense_Non-Champs.png?raw=true)
+
 
 ---
 
@@ -121,8 +122,10 @@ def save_cleaned_csv():
 
 📈 **Graphs:**
 
-* [TS% vs. 3PT%](charts/TSvs3PT.png) → Guards & modern shooters dominate; Ray Allen as outlier (70% TS, >50% 3PT).
-* [3PT Makes vs. Win Shares](charts/WSvs3PT_Makes.png) → Weak overall correlation; only outliers like LeBron show strong efficiency despite low 3PT volume.
+![TS% vs. 3PT%](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/blob/master/charts/TSvs3PT.png?raw=true) → Guards & modern shooters dominate; Ray Allen as outlier (70% TS, >50% 3PT).  
+
+![3PT Makes vs. Win Shares](https://github.com/HansChristopher-Tech/NBA-Playoffs-Data-Analysis-1992---2022-/blob/master/charts/WSvs3PT_Makes.png?raw=true) → Weak overall correlation; only outliers like LeBron show strong efficiency despite low 3PT volume.
+
 
 ---
 
